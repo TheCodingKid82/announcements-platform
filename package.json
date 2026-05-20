@@ -1,0 +1,43 @@
+{
+  "name": "announcements-platform",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx lib/db/migrate.ts",
+    "db:seed": "tsx lib/db/seed.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^2.0.0",
+    "@tailwindcss/postcss": "^4.1.0",
+    "@tiptap/extension-image": "^3.8.0",
+    "@tiptap/extension-link": "^3.8.0",
+    "@tiptap/react": "^3.8.0",
+    "@tiptap/starter-kit": "^3.8.0",
+    "ai": "^5.0.0",
+    "clsx": "^2.1.1",
+    "drizzle-orm": "^0.45.2",
+    "lucide-react": "^0.468.0",
+    "nanoid": "^5.0.9",
+    "next": "^15.0.0",
+    "postgres": "^3.4.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "resend": "^4.0.1",
+    "twilio": "^5.4.0",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "drizzle-kit": "^0.31.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
